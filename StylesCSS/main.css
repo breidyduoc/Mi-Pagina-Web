@@ -1,0 +1,196 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #0f172a; 
+    color: white; 
+}  
+
+header { 
+    background-color: #111827; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 8%; 
+}
+
+.logo { 
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #8b5cf6; 
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 30px; 
+}
+
+nav a { 
+    text-decoration: none; 
+    color: white; 
+    font-size: 16px; 
+    transition: 0.3s; 
+}
+
+nav a:hover { 
+    color: #8b5cf6; 
+}  
+
+main { 
+    min-height: 100vh; 
+}
+
+.hero { 
+    min-height: 420px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 40px 20px; 
+    background: linear-gradient( rgba(15, 23, 42, 0.85),rgba(15, 23, 42, 0.95) ); 
+}
+
+.hero h1 { 
+    font-size: 50px; 
+    margin-bottom: 20px; 
+}
+
+.hero h1 span { 
+    color: #8b5cf6; 
+}
+
+.hero p { 
+    font-size: 19px; 
+    color: #cbd5e1; 
+    max-width: 600px; 
+    margin-bottom: 30px; 
+}
+
+.boton { 
+    display: inline-block; 
+    background-color: #8b5cf6; 
+    color: white; 
+    padding: 14px 28px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: 0.3s; 
+}
+
+.boton:hover { 
+    background-color: #7c3aed; 
+    transform: scale(1.05); 
+}
+
+.juegos { 
+    padding: 70px 8%; 
+} 
+
+.titulo-seccion { 
+    text-align: center; 
+    margin-bottom: 45px; 
+}
+
+.titulo-seccion h2 { 
+    font-size: 34px; 
+    margin-bottom: 10px; 
+}
+
+.titulo-seccion p { 
+    color: #94a3b8; 
+}
+
+.contenedor-juegos { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+}
+ 
+.carta { 
+    background-color: #1e293b; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
+    transition: 0.3s; 
+}
+
+.carta:hover { 
+    transform: translateY(-8px); 
+}
+
+.carta img { 
+    width: 100%; 
+    height: 350px; 
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background-color: #0f172a;
+    padding: 10px;
+}
+
+.contenido-carta { 
+    padding: 20px; 
+}
+
+.contenido-carta h3 { 
+    font-size: 22px; 
+    margin-bottom: 10px; 
+}
+
+.descripcion { 
+    color: #94a3b8; 
+    font-size: 14px; 
+    line-height: 1.5; 
+    margin-bottom: 15px; 
+}
+
+.precio { 
+    color: #a78bfa; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+}
+  
+.boton-juego { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #8b5cf6; 
+    color: white; 
+    border-radius: 6px; 
+    text-decoration: none; 
+    transition: 0.3s; 
+} 
+
+.boton-juego:hover { 
+    background-color: #7c3aed; 
+}
+
+footer { 
+    background-color: #111827; 
+    text-align: center; 
+    padding: 35px 20px; 
+} 
+
+footer h2 { 
+    color: #8b5cf6; 
+    margin-bottom: 10px; 
+} 
+
+footer p { 
+    color: #94a3b8; 
+    font-size: 14px; 
+} 
+
+@media (max-width: 700px) 
+    {   
+        header { flex-direction: column; gap: 20px; }
+        nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; } 
+        .hero h1 { font-size: 36px; } 
+        .hero p { font-size: 16px; } 
+    }
